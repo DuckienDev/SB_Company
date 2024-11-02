@@ -93,11 +93,11 @@ class InforDatingPage extends StatelessWidget {
                         context: context,
                         builder: (BuildContext context) {
                           return Dialog(
-                            insetPadding: EdgeInsets.symmetric(
+                            insetPadding: const EdgeInsets.symmetric(
                                 horizontal: 20, vertical: 80),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(8.0)),
-                            child: ImagePickerDialog(),
+                            child: const ImagePickerDialog(),
                           );
                         },
                       );
@@ -117,7 +117,9 @@ class InforDatingPage extends StatelessWidget {
               const SizedBox(height: 30),
               //button continue
               MyButton(
-                  onTap: () {},
+                  onTap: () {
+                    
+                  },
                   text: 'Continue',
                   color: const Color(0xffDA2126)),
               const SizedBox(height: 24),

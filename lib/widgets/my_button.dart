@@ -7,11 +7,13 @@ class MyButton extends StatelessWidget {
   String text;
   Color color;
 
+
   MyButton({
     Key? key,
     required this.onTap,
     required this.text,
     required this.color,
+    
   }) : super(key: key);
 
   @override
